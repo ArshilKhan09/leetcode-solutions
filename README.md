@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0713-subarray-product-less-than-k](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0713-subarray-product-less-than-k) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 ## Two Pointers
 |  |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0713-subarray-product-less-than-k](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0713-subarray-product-less-than-k) |
 ## Greedy
 |  |
 | ------- |
@@ -26,4 +28,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
+## Sliding Window
+|  |
+| ------- |
+| [0713-subarray-product-less-than-k](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0713-subarray-product-less-than-k) |
+## Prefix Sum
+|  |
+| ------- |
+| [0713-subarray-product-less-than-k](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0713-subarray-product-less-than-k) |
 <!---LeetCode Topics End-->
