@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0713-subarray-product-less-than-k](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0713-subarray-product-less-than-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0930-binary-subarrays-with-sum) |
+| [1929-concatenation-of-array](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1929-concatenation-of-array) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 ## Two Pointers
 |  |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0844-backspace-string-compare](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0844-backspace-string-compare) |
+| [1929-concatenation-of-array](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1929-concatenation-of-array) |
 | [2390-removing-stars-from-a-string](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/2390-removing-stars-from-a-string) |
 ## Hash Table
 |  |
