@@ -3,17 +3,13 @@ class Solution {
         if(x < 0){
             return false;
         }
-        if( x < 9){
-            return true;
+        if (x<0)return false;
+        int z = x;
+        int rev=0;
+        while(x>0){
+            rev = rev*10 + (x%10);
+            x/=10;
         }
-        int og = x ;
-        int reverse = 0;
-        while (x != 0) {
-            int lastDigit = x % 10;                  
-            reverse = (reverse * 10) + lastDigit; 
-            x = x / 10;                         
-        }
-
-        return og == reverse;  
+        return rev==z;
     }
 }
