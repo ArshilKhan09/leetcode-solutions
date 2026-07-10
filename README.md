@@ -83,4 +83,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0009-palindrome-number) |
 <!---LeetCode Topics End-->
