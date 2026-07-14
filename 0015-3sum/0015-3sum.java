@@ -12,7 +12,7 @@ class Solution {
             }
             while(left<right){
                 if(nums[i] + nums[left] + nums[right] == 0){
-                    result.add(java.util.Arrays.asList(nums[i], nums[left], nums[right]));
+                    result.add(Arrays.asList(nums[i], nums[left], nums[right]));
 
                     left++;
                     right--;
