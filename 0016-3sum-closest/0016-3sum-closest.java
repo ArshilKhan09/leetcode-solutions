@@ -18,7 +18,7 @@ class Solution {
                     resSum = total;
                 }
                 if( total == target){
-                    return resSum;
+                    return total;
                 }
                 if(total < target){
                     left++;
