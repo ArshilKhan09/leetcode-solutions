@@ -13,13 +13,13 @@ class Solution {
             }
         }
 
-        for(int i=nums.length-1 ;  i >= 0 ; i--){
+        for(int i=nums.length-2 ;  i >= 0 ; i--){
             low = Math.min(low,nums[i]);
             if(nums[i] > low){
                 left=i;
             }
         }
-        if(right == -1){
+        if(right <0){
             return 0;
         }
         
