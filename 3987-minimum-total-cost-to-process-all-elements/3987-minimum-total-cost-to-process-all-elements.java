@@ -2,22 +2,23 @@ class Solution {
     public int minimumCost(int[] nums, int k) {
        final long MOD = 1_000_000_007L;
 
-        long cnt = 0;
-        long cur = k;
+        long sum = 0;
+        for (int num : nums) {
+            sum += num;
+        }
+        long operations = (sum + k - 1L) / k - 1;
 
-        for (int x : nums) {
-            long diff = (long) x - cur;
+        long a = operations;
+        long b = operations + 1;
 
-            if (diff > 0) {
-                long ops = (diff + k - 1L) / k;
-                cnt += ops;
-                cur += ops * (long) k;
-            }
-
-            cur -= x;
+        if ((a & 1) == 0) {
+            a /= 2;
+        } else {
+            b /= 2;
         }
 
-        cnt %= MOD;
-        return (int) ((cnt * (cnt + 1) / 2) % MOD);
+        long answer = ((a % MOD) * (b % MOD)) % MOD;
+
+        return (int) answer;
     }
 }
