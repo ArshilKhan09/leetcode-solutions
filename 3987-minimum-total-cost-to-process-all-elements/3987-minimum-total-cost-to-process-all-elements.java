@@ -1,24 +1,16 @@
 class Solution {
     public int minimumCost(int[] nums, int k) {
-       final long MOD = 1_000_000_007L;
-
-        long sum = 0;
-        for (int num : nums) {
-            sum += num;
+       long sum = 0;
+        for(int i : nums) sum+=i;
+        long temp = sum/k;
+        if(sum%k==0){
+            temp--;
         }
-        long operations = (sum + k - 1L) / k - 1;
+        long mod = 1000000007;
+        long a = temp%mod;
+        long b = (temp+1)%mod;
+        long ans = ( (a*b)/2 ) %mod;
 
-        long a = operations;
-        long b = operations + 1;
-
-        if ((a & 1) == 0) {
-            a /= 2;
-        } else {
-            b /= 2;
-        }
-
-        long answer = ((a % MOD) * (b % MOD)) % MOD;
-
-        return (int) answer;
+        return (int) ans;
     }
 }
