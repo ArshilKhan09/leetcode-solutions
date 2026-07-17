@@ -10,6 +10,9 @@ class Solution {
                 right=i;
             }
         }
+        if(right < 0){
+            return 0;
+        }
 
         int low = nums[nums.length-1];
         int left=-1;
@@ -18,9 +21,6 @@ class Solution {
             if(nums[i] > low){
                 left=i;
             }
-        }
-        if(right < 0){
-            return 0;
         }
         
         return right-left + 1;
