@@ -15,7 +15,6 @@ class Solution {
 
                 int left = j+1;
                 int right = nums.length-1;
-
                 while(left < right){
                     long sum = (long) nums[i]+nums[j]+nums[left]+nums[right];
                         
@@ -38,7 +37,6 @@ class Solution {
                 }
             }
         }
-
         return result;
     }
 }
