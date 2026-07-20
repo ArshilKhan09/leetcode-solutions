@@ -3,22 +3,14 @@ class Solution {
         Arrays.sort(nums);
 
         List<Integer> result = new ArrayList<>();
-        int expected = 1;
-
-        for (int num : nums) {
-            if (num == expected) {
-                expected++;
-            } else if (num > expected) {
-                while (expected < num) {
-                    result.add(expected);
-                    expected++;
-                }
-                expected++;
-            }
+        int[] arr=new int[nums.length+1];
+        for(int x:nums){
+            arr[x]++;
         }
-
-        while (expected <= nums.length) {
-            result.add(expected++);
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]==0){
+                result.add(i);
+            }
         }
 
         return result;
