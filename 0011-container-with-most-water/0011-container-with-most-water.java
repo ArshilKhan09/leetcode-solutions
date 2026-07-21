@@ -7,8 +7,9 @@ class Solution {
         while(left < right){
             int leftHeight = arr[left];
             int rightHeight = arr[right];
+            int width = right-left;
 
-            area = Math.max(area , Math.min(leftHeight, rightHeight) * (right - left));
+            area = Math.max(area , Math.min(leftHeight, rightHeight) * width);
 
             if (leftHeight < rightHeight) {
                 while (left < right && arr[left] <= leftHeight) {
