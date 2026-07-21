@@ -14,7 +14,8 @@ class Solution {
                 while (left < right && arr[left] <= leftHeight) {
                     left++;
                 }
-            } else {
+            }
+            else {
                 while (left < right && arr[right] <= rightHeight) {
                     right--;
                 }
