@@ -1,27 +1,23 @@
 class Solution {
     public int maxArea(int[] arr) {
-        int left = 0 ;
-        int right = arr.length-1;
-        int area = 0;
+        int left = 0;
+        int right = arr.length - 1;
+        int maxArea = 0;
+        while (left < right) {
 
-        while(left < right){
-            int leftHeight = arr[left];
-            int rightHeight = arr[right];
-            int width = right-left;
+            int width = right - left;
+            int length = Math.min(arr[left], arr[right]);
 
-            area = Math.max(area , Math.min(leftHeight, rightHeight) * width);
+            int currentArea = length * width;
+            maxArea = Math.max(maxArea, currentArea);
 
-            if (leftHeight < rightHeight) {
-                while (left < right && arr[left] <= leftHeight) {
-                    left++;
-                }
-            }
-            else {
-                while (left < right && arr[right] <= rightHeight) {
-                    right--;
-                }
+            if (arr[left] < arr[right]) {
+                left++;
+            } else {
+                right--;
             }
         }
-        return area;
+        System.gc();
+        return maxArea;
     }
 }
