@@ -1,42 +1,31 @@
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
-        int[] result = new int[n - k + 1];
+        int[] pre = new int[n];
+        int[] post = new int[n];
 
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        for (int i=0; i< n; i+=k) {
+            int s = i;
+            int e = Math.min(i+k, n);
 
-        for (int num : nums) {
-            min = Math.min(num, min);
-            max = Math.max(max, num);
-        }
-
-        int[] count = new int[max - min + 1];
-        int windowMax = Integer.MIN_VALUE;
-
-        for (int i = 0; i < k; i++) {
-            count[nums[i] - min]++;
-            windowMax = Math.max(windowMax, nums[i]);
-        }
-
-        result[0] = windowMax;
-
-        for (int i = k; i < n; i++) {
-            count[nums[i] - min]++;
-            if (nums[i] > windowMax) {
-                windowMax = nums[i];
+            int max = Integer.MIN_VALUE;
+            for (int sp=s; sp<e; sp++) {
+                max = Math.max(max, nums[sp]);
+                pre[sp] = max;
             }
 
-            int outgoing = nums[i - k];
-            count[outgoing - min]--;
-            if (outgoing == windowMax && count[windowMax - min] == 0) {
-                while (count[windowMax - min] == 0)
-                    windowMax--;
+            max = Integer.MIN_VALUE;
+            while (e > s) {
+                max = Math.max(max, nums[e-1]);
+                post[--e] = max;
             }
-
-            result[i - k + 1] = windowMax;
         }
 
-        return result;
+        int ans[] = new int[n-k+1];
+        for (int i=0; i<n-k+1; i++) {
+            ans[i] = Math.max(post[i], pre[i+k-1]);
+        }
+
+        return ans;
     }
 }
