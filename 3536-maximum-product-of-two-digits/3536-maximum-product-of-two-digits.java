@@ -6,7 +6,7 @@ class Solution {
         int max = 0;
         int i = digits.length-1;
         
-        if(digits.length >= 1){
+        if(digits.length > 1){
             max = digits[i] * digits[i-1]; 
         }
         else{
