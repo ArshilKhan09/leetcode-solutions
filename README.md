@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0011-container-with-most-water) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 ## Sorting
 |  |
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [0844-backspace-string-compare](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0844-backspace-string-compare) |
 | [2390-removing-stars-from-a-string](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/2390-removing-stars-from-a-string) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Stack
 |  |
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0009-palindrome-number) |
 | [0066-plus-one](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0066-plus-one) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3536-maximum-product-of-two-digits](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3536-maximum-product-of-two-digits) |
 ## Linked List
 |  |
