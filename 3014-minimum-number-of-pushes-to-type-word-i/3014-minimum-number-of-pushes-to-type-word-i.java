@@ -1,29 +1,21 @@
 class Solution {
     public int minimumPushes(String word) {
-        int[] freq = new int[26];
+        HashMap<Integer, List<Character>> map = new HashMap<>();
+        Set<Character> set = new HashSet<>();
+        int pushes = 1;
+        int pushesCount = 0;
+        int setSize = 0;
+        for(char ch : word.toCharArray()){
+            if(setSize == 8){
+                setSize = 0;
+                pushes++;  
+            } 
 
-        for (char c : word.toCharArray()) {
-            freq[c - 'a']++;
-        }
-        
-        Arrays.sort(freq);
-
-        int ans = 0;
-        int push = 1;
-        int count = 0;
-
-        for (int i = 25; i >= 0; i--) {
-            if (freq[i] == 0) break;
-
-            ans += freq[i] * push;
-            count++;
-
-            if (count == 8) {
-                count = 0;
-                push++;
-            }
+            set.add(ch);
+            setSize++;
+            pushesCount += pushes;   
         }
 
-        return ans;
+        return pushesCount;
     }
 }
