@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0011-container-with-most-water) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 ## Sorting
 |  |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0977-squares-of-a-sorted-array](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3536-maximum-product-of-two-digits](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3536-maximum-product-of-two-digits) |
@@ -105,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0844-backspace-string-compare](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0844-backspace-string-compare) |
 | [2390-removing-stars-from-a-string](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/2390-removing-stars-from-a-string) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Stack
 |  |
@@ -131,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -156,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/ArshilKhan09/leetcode-solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Queue
 |  |
