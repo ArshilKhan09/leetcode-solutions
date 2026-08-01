@@ -17,8 +17,8 @@ class Solution {
                 }
                 low++;
             }
-            int currLen = high-low+1;
-            maxLen = Math.max(maxLen,currLen);
+
+            maxLen = Math.max(maxLen,(high-low+1));
             high++;
         }
         return maxLen;
