@@ -8,7 +8,7 @@ class Solution {
         while(high < fruits.length)
         {
             map.put(fruits[high],map.getOrDefault(fruits[high],0)+1);
-            while(map.size() > 2)
+            while(map.size() >= 3)
             {
                 map.put(fruits[low],map.get(fruits[low])-1);
                 if(map.get(fruits[low]) == 0){ 
