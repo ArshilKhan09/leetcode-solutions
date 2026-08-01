@@ -3,13 +3,12 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap<>();
         int low = 0;
         int high = 0;
-        int n = fruits.length;
         int maxLen = 0;
         
-        while(high < n)
+        while(high < fruits.length)
         {
             map.put(fruits[high],map.getOrDefault(fruits[high],0)+1);
-            while(map.size()>=3)
+            while(map.size() > 2)
             {
                 map.put(fruits[low],map.get(fruits[low])-1);
                 if(map.get(fruits[low]) == 0){ 
