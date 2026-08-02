@@ -1,48 +1,36 @@
 class Solution {
-
-    boolean fun(int[] need, int[] have) {
-        for(int i = 0; i < 128; i++) {
-            if(have[i] < need[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public String minWindow(String s, String t) {
         
         if(s.length() < t.length()) {
             return "";
         }
 
-        int[] need = new int[128];
-        int[] have = new int[128];
+        int[] map = new int[128];
+        int count = t.length();
+        int start = 0, end = 0, minLen = Integer.MAX_VALUE, startIndex = 0;
 
-        for(char c : t.toCharArray()) {
-            need[c]++;
+        for (char c : t.toCharArray()) {
+            map[c]++;
         }
 
-        int low = 0;
-        int start = 0;
-        int res = Integer.MAX_VALUE;
+        char[] ch = s.toCharArray();
 
-        for(int high = 0; high < s.length(); high++) {
-
-            have[s.charAt(high)]++;
-
-            while(fun(need, have)) {
-
-                int len = high - low + 1;
-
-                if(len < res) {
-                    res = len;
-                    start = low;
+        while (end < ch.length) {
+            if (map[ch[end++]] -- > 0) {
+                count--;
+            }
+            while (count == 0) {
+                if (end - start < minLen) {
+                    startIndex = start;
+                    minLen = end - start;
                 }
-
-                have[s.charAt(low)]--;
-                low++;
+                if (map[ch[start++]]++ == 0) {
+                    count++;
+                }
             }
         }
-        return res == Integer.MAX_VALUE ? "" : s.substring(start, start + res);
+
+        return minLen == Integer.MAX_VALUE ? new String() : new String(ch, startIndex, minLen);
+
     }
 }
