@@ -1,56 +1,48 @@
 class Solution {
+
+    static boolean correct(int[] have , int[] need){
+        for(int i = 0 ; i < 256 ; i++){
+            if(have[i] < need[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public String minWindow(String s, String t) {
 
         if (s.length() < t.length()) {
             return "";
         }
 
-        int[] map = new int[128];
+        int[] have = new int[256];
+        int[] need = new int[256];
 
-        for (char c : t.toCharArray()) {
-            map[c]++;
+        for(int i = 0 ; i < t.length() ; i++){
+           need[t.charAt(i)]++;
         }
 
+        int low = 0;
+        int res = Integer.MAX_VALUE;
         int start = 0;
-        int end = 0;
 
-        int count = t.length();
-        int minLen = Integer.MAX_VALUE;
-        int startIndex = 0;
+        for(int high = 0 ; high < s.length() ; high++){
+            have[s.charAt(high)]++;
 
-        char[] ch = s.toCharArray();
-
-        while (end < ch.length) {
-            char endChar = ch[end];
-            end++;
-
-            if (map[endChar] > 0) {
-                count--;
-            }
-            
-            map[endChar]--;
-            while (count == 0) {
-
-                if (end - start < minLen) {
-                    minLen = end - start;
-                    startIndex = start;
+            while(correct(have , need)){
+                int len = high-low+1;
+                if(res > len){
+                    res = len ;
+                    start = low;
                 }
-
-                char startChar = ch[start];
-                start++;
-
-                if (map[startChar] == 0) {
-                    count++;
-                }
-
-                map[startChar]++;
+                have[s.charAt(low)]--;
+                low++;
             }
         }
-
-        if (minLen == Integer.MAX_VALUE) {
+        if (res == Integer.MAX_VALUE) {
             return "";
         }
 
-        return new String(ch, startIndex, minLen);
+        return s.substring(start , start+res);
     }
 }
