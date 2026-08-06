@@ -39,10 +39,7 @@ class Solution {
                 low++;
             }
         }
-        if (res == Integer.MAX_VALUE) {
-            return "";
-        }
 
-        return s.substring(start , start+res);
+        return res == Integer.MAX_VALUE ? "" : s.substring(start , start+res);
     }
 }
